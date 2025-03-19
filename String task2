@@ -1,0 +1,29 @@
+# Java-Addon
+package task;
+import java.util.Scanner;
+public class StringTask2
+{
+  public static void main(String[] args)
+  {
+	  Scanner scanner=new Scanner(System.in);
+	  System.out.println("Enter the string: ");
+	  String in = scanner.nextLine();
+	  String n ="aeiouAEIOU";
+	   int count=0;
+	   char[] d = n.toCharArray();
+	   for (int i=0;i<in.length();i++) 
+	   {
+		   for ( int j=0;j<n.length();j++)
+		   {
+			   if ( in.charAt(i) == n.charAt(j))
+			   {
+				   System.out.println("the vowel : " +in.charAt(i));
+				   
+				   count++;
+			   }
+		   }
+	   }
+			  System.out.println("the count of vowels : " +count);
+  }
+ 
+}
